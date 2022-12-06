@@ -201,7 +201,10 @@ void fileName(int fd, int fileAtt[], int x, char *name){
 }
 
 /*
-    get
+    from $DATA write the data to recovery file 
+    
+    if data is nonresident 
+        navigate to datarun offsets and write data to file 
 */
 void fileDatarun(int rfd, int fd, int data[], int x){
     uint8_t extra[data[1]];
