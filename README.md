@@ -9,3 +9,6 @@
 gcc main.c -o out
 sudo ./out /dev/sd<x> <inode>
 ```
+
+# TODO 
+- recover files that are not fragmented
